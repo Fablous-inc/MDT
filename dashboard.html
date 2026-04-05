@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>MDT | Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <div class="logo"><strong>MDT</strong> PORTAL</div>
+        <div id="user-display">
+            <span id="staff-name" style="margin-right: 15px; color: #94a3b8;"></span>
+            <button onclick="logout()" style="background: #334155;">Logout</button>
+        </div>
+    </nav>
+
+    <main>
+        <aside class="search-sidebar">
+            <input type="text" id="search-input" placeholder="Search records..." oninput="search()">
+            <div id="results-list">
+                </div>
+        </aside>
+
+        <section class="editor">
+            <div class="editor-header">
+                <h2>Record Management</h2>
+            </div>
+            <div class="form-container">
+                <input type="text" id="edit-pseudo" placeholder="Pseudonym">
+                <input type="text" id="edit-real" placeholder="Real Name">
+                <div style="margin-bottom: 1rem;">
+                    <label><input type="checkbox" id="edit-verified"> Verified Status</label>
+                </div>
+                <textarea id="edit-flags" rows="8" placeholder="Detailed Flags & Notes..."></textarea>
+                <div style="display: flex; gap: 10px;">
+                    <button class="save-btn" onclick="saveRecord()">Save Entry</button>
+                    <button class="delete-btn" onclick="deleteRecord()">Delete Entry</button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script src="dashboard.js"></script>
+</body>
+</html>
