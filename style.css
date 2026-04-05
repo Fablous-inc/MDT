@@ -89,3 +89,19 @@ button:hover { opacity: 0.9; }
 
 .save-btn { background: var(--success); }
 .delete-btn { background: var(--danger); }
+
+.check-container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px;
+    background: #0f172a;
+    border-radius: 6px;
+    border: 1px solid var(--border);
+    cursor: pointer;
+}
+
+.check-container input {
+    width: auto; /* Keeps the box from stretching to 100% width */
+    margin: 0;
+}
