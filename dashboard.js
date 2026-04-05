@@ -20,7 +20,7 @@ const WORKER_URL = "https://mdt.fetched.workers.dev";
 
     try {
         const user = JSON.parse(atob(token));
-        document.getElementById('staff-name').innerText = `Officer: ${user.name}`;
+        document.getElementById('staff-name').innerText = `Personnel: ${user.name}`;
     } catch (e) {
         logout();
     }
