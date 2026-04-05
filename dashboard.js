@@ -1,4 +1,4 @@
-const WORKER_URL = "https://mdt.fetched.workers.dev/";
+const WORKER_URL = "https://mdt.fetched.workers.dev";
 
 // Run immediately on page load
 (function init() {
